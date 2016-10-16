@@ -1,0 +1,24 @@
+<div>
+  <form [formGroup]="form" novalidate class="form" [class.has-error]="form.dirty && !form.valid"
+        (ngSubmit)="form.valid ? onSubmit(form.value) : return">
+    <div class="form-group">
+      <label class="control-label" for="first">First</label>
+      <input class="form-control" id="first"  formControlName="firstName" >
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="last">Last</label>
+      <input class="form-control" id="last" formControlName="lastName" ><br>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="zip">Zip</label>
+      <input class="form-control" id="zip" formControlName="zip" ><br>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-default" [class.disabled]="!form.valid">Submit</button>
+    </div>
+  </form>
+</div>
+<div>
+  <p>Form value: {{form.value | json}}</p>
+  <p>Form status: {{form.status | json}}</p>
+</div>

@@ -1,5 +1,9 @@
 # AngularViennaOctober
 
+A small demo with comparison of template driven and reactive forms in Angular 2, presented at Angular Vienna meetup
+
+a pretty bad copy of https://github.com/kara/ac-forms
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 
 ## Development server
